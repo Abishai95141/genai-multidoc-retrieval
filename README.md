@@ -5,13 +5,18 @@ To design and implement a multidocument retrieval agent using LlamaIndex to extr
 
 ### PROBLEM STATEMENT:
 
+Extracting specific, nuanced information from a collection of dense academic papers is a slow and inefficient manual process. Standard search tools rely on exact keywords and fail to understand the conceptual context of a user's question. This program aims to build an AI agent that can intelligently query multiple documents to synthesize precise answers to complex questions.
+
 ### DESIGN STEPS:
 
 #### STEP 1:
+Load PDF documents and create specialized search and summary tools for each paper.
 
 #### STEP 2:
+Initialize an AI agent with an OpenAI model, giving it access to all the created tools.
 
 #### STEP 3:
+Query the agent with a specific question about one paper to get a detailed answer from its content.
 
 ### PROGRAM:
 ```
@@ -77,3 +82,5 @@ response = agent.query(
 <img width="1057" height="425" alt="Screenshot 2025-10-24 at 11 13 34 AM" src="https://github.com/user-attachments/assets/06027ead-3e99-4dec-aa35-db5a9f38db1d" />
 
 ### RESULT:
+
+The system successfully retrieves and synthesizes relevant information from multiple documents, providing concise and relevant answers to the user's query. Performance is evaluated based on the accuracy, relevance, and coherence of the responses.    
